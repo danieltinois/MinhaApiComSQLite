@@ -1,115 +1,131 @@
-🚀 API de Produtos - Um Sistema Simples de Cadastro de Produtos
+# 🚀 API de Produtos - Um Sistema Simples de Cadastro de Produtos
 
 Bem-vindo à nossa API! Aqui você pode criar, listar, atualizar e deletar produtos de maneira simples e eficaz. Tudo foi feito para garantir uma experiência de desenvolvimento tranquila e produtiva! 💻🎉
-🧭 Endpoints
-1. Criar Produto - POST /api/produtos
 
+## 🧭 Endpoints
+
+### 1. **Criar Produto** - `POST /api/produtos`
 Adicione um produto à nossa base de dados com as informações necessárias.
 
-    Body (JSON):
+<p><strong>Body (JSON):</strong></p>
+<pre>
+{
+  "nome": "Produto Exemplo",
+  "preco": 99.99
+}
+</pre>
 
-    {
-      "nome": "Produto Exemplo",
-      "preco": 99.99
-    }
+<p><strong>Resposta:</strong> Produto criado com sucesso! 🏅</p>
 
-    Resposta: Produto criado com sucesso! 🏅
+---
 
-2. Obter Produtos - GET /api/produtos
-
+### 2. **Obter Produtos** - `GET /api/produtos`
 Liste todos os produtos cadastrados com paginação.
 
-    Parâmetros de consulta:
-        page: Número da página (padrão 1)
-        pageSize: Número de itens por página (padrão 10)
+<p><strong>Parâmetros de consulta:</strong></p>
+<ul>
+  <li><strong>page</strong>: Número da página (padrão 1)</li>
+  <li><strong>pageSize</strong>: Número de itens por página (padrão 10)</li>
+</ul>
 
-    Exemplo de resposta:
-
-    {
-      "page": 1,
-      "pageSize": 10,
-      "totalProdutos": 50,
-      "totalPages": 5,
-      "data": [
-        {
-          "id": 1,
-          "nome": "Produto A",
-          "preco": 50.00
-        }
-      ]
-    }
-
-3. Filtrar Produtos - GET /api/produtos/filtrar
-
-Filtre produtos por nome, preço mínimo e máximo ou ordem de preço.
-
-    Parâmetros de consulta:
-        nome: Nome do produto (opcional)
-        precoMin: Preço mínimo (opcional)
-        precoMax: Preço máximo (opcional)
-        ordem: Ordenação (opcional: "asc" ou "desc")
-
-    Exemplo de resposta:
-
-    [
-      {
-        "id": 1,
-        "nome": "Produto Exemplo",
-        "preco": 99.99
-      }
-    ]
-
-4. Obter Produto por ID - GET /api/produtos/{id}
-
-Recupere um produto específico pelo ID.
-
-    Exemplo de resposta:
-
+<p><strong>Exemplo de resposta:</strong></p>
+<pre>
+{
+  "page": 1,
+  "pageSize": 10,
+  "totalProdutos": 50,
+  "totalPages": 5,
+  "data": [
     {
       "id": 1,
       "nome": "Produto A",
       "preco": 50.00
     }
+  ]
+}
+</pre>
 
-5. Atualizar Produto - PUT /api/produtos/{id}
+---
 
+### 3. **Filtrar Produtos** - `GET /api/produtos/filtrar`
+Filtre produtos por nome, preço mínimo e máximo ou ordem de preço.
+
+<p><strong>Parâmetros de consulta:</strong></p>
+<ul>
+  <li><strong>nome</strong>: Nome do produto (opcional)</li>
+  <li><strong>precoMin</strong>: Preço mínimo (opcional)</li>
+  <li><strong>precoMax</strong>: Preço máximo (opcional)</li>
+  <li><strong>ordem</strong>: Ordenação (opcional: "asc" ou "desc")</li>
+</ul>
+
+<p><strong>Exemplo de resposta:</strong></p>
+<pre>
+[
+  {
+    "id": 1,
+    "nome": "Produto Exemplo",
+    "preco": 99.99
+  }
+]
+</pre>
+
+---
+
+### 4. **Obter Produto por ID** - `GET /api/produtos/{id}`
+Recupere um produto específico pelo ID.
+
+<p><strong>Exemplo de resposta:</strong></p>
+<pre>
+{
+  "id": 1,
+  "nome": "Produto A",
+  "preco": 50.00
+}
+</pre>
+
+---
+
+### 5. **Atualizar Produto** - `PUT /api/produtos/{id}`
 Atualize as informações de um produto.
 
-    Body (JSON):
+<p><strong>Body (JSON):</strong></p>
+<pre>
+{
+  "nome": "Produto Atualizado",
+  "preco": 59.99
+}
+</pre>
 
-    {
-      "nome": "Produto Atualizado",
-      "preco": 59.99
-    }
+<p><strong>Resposta:</strong> Produto atualizado com sucesso! 🔄</p>
 
-    Resposta: Produto atualizado com sucesso! 🔄
+---
 
-6. Remover Produto - DELETE /api/produtos/{id}
-
+### 6. **Remover Produto** - `DELETE /api/produtos/{id}`
 Exclua um produto da base de dados.
 
-    Resposta: Produto removido com sucesso! 🗑️
+<p><strong>Resposta:</strong> Produto removido com sucesso! 🗑️</p>
 
-⚙️ Configuração
+---
 
-    Clone o repositório.
+## ⚙️ Configuração
 
-    Instale as dependências do projeto.
+1. Clone o repositório.
+2. Instale as dependências do projeto.
+3. Execute o comando abaixo para rodar o projeto:
+   <pre><code>dotnet run --urls "http://localhost:5029"</code></pre>
 
-    Execute o comando abaixo para rodar o projeto:
+4. A API estará disponível em <strong>http://localhost:5029</strong>.
 
-    dotnet run --urls "http://localhost:5029"
+---
 
-    A API estará disponível em http://localhost:5029.
+## 📝 Testando no Postman
 
-📝 Testando no Postman
+1. Abra o Postman.
+2. Acesse os endpoints conforme descrito acima.
+3. Envie as requisições para a porta <strong>5029</strong>!
 
-    Abra o Postman.
-    Acesse os endpoints conforme descrito acima.
-    Envie as requisições para a porta 5029!
+---
 
-🚀 Sucesso! 🎉
+## 🚀 Sucesso! 🎉
 
 Se você chegou até aqui, parabéns! Agora você tem uma API poderosa e bem estruturada para gerenciar produtos. Espero que você se divirta com ela! 🏆
-
-
