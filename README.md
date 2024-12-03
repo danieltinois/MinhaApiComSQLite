@@ -137,7 +137,7 @@ Exclua um produto da base de dados.
 
 Você pode visualizar e testar a documentação da API diretamente no Swagger! Acesse o link abaixo para explorar todos os endpoints:
 
-![Swagger Documentation](https://via.placeholder.com/800x400?text=Swagger+UI)
+![Swagger Documentation](swaggerImage.png)
 
 A documentação interativa estará disponível em `http://localhost:5029/swagger`.
 
