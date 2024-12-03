@@ -1,6 +1,6 @@
 # 🚀 API de Produtos - Um Sistema Simples de Cadastro de Produtos
 
-Bem-vindo à nossa API! Aqui você pode criar, listar, atualizar e deletar produtos de maneira simples e eficaz. Tudo foi feito para garantir uma experiência de desenvolvimento tranquila e produtiva! 💻🎉
+Bem-vindo à minha API! Aqui você pode criar, listar, atualizar e deletar produtos de maneira simples e eficaz. Tudo foi feito para garantir uma experiência de desenvolvimento tranquila e produtiva! 💻🎉
 
 ## 🧭 Endpoints
 
