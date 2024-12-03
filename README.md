@@ -11,7 +11,8 @@ Adicione um produto à nossa base de dados com as informações necessárias.
 <pre>
 {
   "nome": "Produto Exemplo",
-  "preco": 99.99
+  "preco": 99.99,
+  "emPromoção": true
 }
 </pre>
 
