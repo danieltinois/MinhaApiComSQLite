@@ -176,7 +176,7 @@ namespace ProdutosApi.Controllers
             _context.Produtos.Remove(produto);
             _context.SaveChanges();
 
-            return NoContent();
+            return Ok(new { message = $"Produto {produto.Nome} removido com sucesso!"});
         }
     }
 }

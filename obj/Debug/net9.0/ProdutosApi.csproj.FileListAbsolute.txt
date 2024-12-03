@@ -143,3 +143,4 @@
 /Users/danieltinois/Desktop/ProdutosApi/obj/Debug/net9.0/ProdutosApi.pdb
 /Users/danieltinois/Desktop/ProdutosApi/obj/Debug/net9.0/ProdutosApi.genruntimeconfig.cache
 /Users/danieltinois/Desktop/ProdutosApi/obj/Debug/net9.0/ref/ProdutosApi.dll
+/Users/danieltinois/Desktop/ProdutosApi/obj/Debug/net9.0/ProdutosApi.sourcelink.json
