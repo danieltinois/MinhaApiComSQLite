@@ -113,7 +113,7 @@ Exclua um produto da base de dados.
 1. Clone o repositório.
 2. Instale as dependências do projeto.
 3. Execute o comando abaixo para rodar o projeto:
-   <pre><code>dotnet run"</code></pre>
+   <pre><code>dotnet run</code></pre>
 
 4. A API estará disponível em <strong>http://localhost:5029</strong>.
 
