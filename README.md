@@ -5,6 +5,7 @@ Bem-vindo à minha API! Aqui você pode criar, listar, atualizar e deletar produ
 ## 🧭 Endpoints
 
 ### 1. **Criar Produto** - `POST /api/produtos`
+
 Adicione um produto à nossa base de dados com as informações necessárias.
 
 <p><strong>Body (JSON):</strong></p>
@@ -21,6 +22,7 @@ Adicione um produto à nossa base de dados com as informações necessárias.
 ---
 
 ### 2. **Obter Produtos** - `GET /api/produtos`
+
 Liste todos os produtos cadastrados com paginação.
 
 <p><strong>Parâmetros de consulta:</strong></p>
@@ -49,6 +51,7 @@ Liste todos os produtos cadastrados com paginação.
 ---
 
 ### 3. **Filtrar Produtos** - `GET /api/produtos/filtrar`
+
 Filtre produtos por nome, preço mínimo e máximo ou ordem de preço.
 
 <p><strong>Parâmetros de consulta:</strong></p>
@@ -73,6 +76,7 @@ Filtre produtos por nome, preço mínimo e máximo ou ordem de preço.
 ---
 
 ### 4. **Obter Produto por ID** - `GET /api/produtos/{id}`
+
 Recupere um produto específico pelo ID.
 
 <p><strong>Exemplo de resposta:</strong></p>
@@ -87,6 +91,7 @@ Recupere um produto específico pelo ID.
 ---
 
 ### 5. **Atualizar Produto** - `PUT /api/produtos/{id}`
+
 Atualize as informações de um produto.
 
 <p><strong>Body (JSON):</strong></p>
@@ -102,6 +107,7 @@ Atualize as informações de um produto.
 ---
 
 ### 6. **Remover Produto** - `DELETE /api/produtos/{id}`
+
 Exclua um produto da base de dados.
 
 <p><strong>Resposta:</strong> Produto removido com sucesso! 🗑️</p>
@@ -124,6 +130,16 @@ Exclua um produto da base de dados.
 1. Abra o Postman.
 2. Acesse os endpoints conforme descrito acima.
 3. Envie as requisições para a porta <strong>5029</strong>!
+
+---
+
+## 📜 Documentação Swagger
+
+Você pode visualizar e testar a documentação da API diretamente no Swagger! Acesse o link abaixo para explorar todos os endpoints:
+
+![Swagger Documentation](https://via.placeholder.com/800x400?text=Swagger+UI)
+
+A documentação interativa estará disponível em `http://localhost:5029/swagger`.
 
 ---
 
