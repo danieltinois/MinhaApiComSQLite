@@ -140,9 +140,3 @@ Você pode visualizar e testar a documentação da API diretamente no Swagger! A
 ![Swagger Documentation](swaggerImage.png)
 
 A documentação interativa estará disponível em `http://localhost:5029/swagger`.
-
----
-
-## 🚀 Sucesso! 🎉
-
-Se você chegou até aqui, parabéns! Agora você tem uma API poderosa e bem estruturada para gerenciar produtos. Espero que você se divirta com ela! 🏆
